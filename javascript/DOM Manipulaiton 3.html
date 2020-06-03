@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>DOM Part 3</title>
+        <link rel="stylesheet" href="css/style2.css">
+    </head>
+
+
+    <body>
+        <h3>jQuery-DOM Manipulation</h3>
+        <button id="btn1">Append</button>
+        <button id="btn2">After</button>
+        <button id="btn3">Prepend</button>
+        <button id="btn4">Before</button>
+        <br>
+        <br>
+        <button id="btn5">Remove</button>
+        <button id="btn6">Empty</button>
+
+        <div id="div1" class="mydiv">
+            <p id="p1" class="pic" values="hello world">This is third<b> paragraph</b>
+            in <i>second </i>division</p>
+        </div>
+        </body>
+        <script src="JS/jquery.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function()
+            {
+
+                $("#btn1").click(function(){
+
+                    $("#div1").append("<p>This is 2nd paragraph</p>");
+                })
+
+            })
+        </script>
+    </body>
+</html>

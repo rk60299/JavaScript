@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>DOM manipulation</title>
+        <script type="text/javascript">
+        function fn1()
+        {
+          var para=document.getElementsByTagName("p");
+          para[0].style.fontsize=10;
+          para[1].style.color="red";
+          para[2].style.fontWeight="bold";
+          para[3].style.fontStyle="Italic";
+        //   for(var i=0;i<para.length;i++)
+        //   {
+        //       para[i].style.fontSize =22;
+        //   }
+
+        }
+        </script>
+
+
+
+    </head>
+    <body>
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+        <button onclick="fn1()">click me</button>
+        <a href="">This is a anchor tag</a>
+    </body>
+</html>
